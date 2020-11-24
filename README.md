@@ -18,7 +18,7 @@ Prerequisites:
 - Install the needed JDK code in able to run the Java code.
 - Get the code:
     ```
-    git clone https://github.com/Eric-Wiegman/DeckOfCard.git
+    git clone https://github.com/Eric-Wiegman/DeckOfCards.git
     ```
 
 - Open the CardsTester.java file and run it as a Java Application to play the game that indirectly tests the API.
@@ -69,6 +69,12 @@ You ran out of cards. Please try again, later.
 ```
 - In all other cases, the cards are drawn from the deck and listed (similar to the output seen above when a non-numeric value was given at the prompt.)
 
+## Issues
+
+- You will notice that one of the TestNG tests may fail, but I have not changed the code to "work around" the potential issue that it has recovered.
+Specifically, the assumption was that the main image file (such as "3S.png") had the same name as the code ("3S") for this example of 3 of Spades.
+However, when testing the testcase runs, it was discovered that for the Ace of Diamonds, the code was the expected "AD" yet the file name was "aceDiamonds.png" --
+While this may not finding a software bug, it is certainly pointing out a glaring inconsistency.
 
 ## License
 
