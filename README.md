@@ -3,45 +3,32 @@
 README was lost & cannot be recovered. It's in the process of being recreated. This text will be removed when it is *fixed*.
 ```
 
-The Windows Calculator app is a modern Windows app written in C++ that ships pre-installed with Windows.
-The app provides standard, scientific, and programmer calculator functionality, as well as a set of converters between various units of measurement and currencies.
+The DeckOfCards app is a game that tests the "Deck of Cards" API by creating a new deck of cards; adding jokers; shuffling it; and then iteratively asking the user to draw a number of cards.
 
 ## Features
-- Standard Calculator functionality which offers basic operations and evaluates commands immediately as they are entered.
-- Scientific Calculator functionality which offers expanded operations and evaluates commands using order of operations.
-- Programmer Calculator functionality which offers common mathematical operations for developers including conversion between common bases.
-- Date Calculation functionality which offers the difference between two dates, as well as the ability to add/subtract years, months and/or days to/from a given input date.
-- Calculation history and memory capabilities.
-- Conversion between many units of measurement.
-- Currency conversion based on data retrieved from [Bing](https://www.bing.com).
-- [Infinite precision](https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic) for basic
-  arithmetic operations (addition, subtraction, multiplication, division) so that calculations
-  never lose precision.
+- Implements automation to test the following APIs in Java
+  - Create a new deck of cards
+    - GET https://deckofcardsapi.com/api/deck/new/
+  - Support adding Jokers with a POST
+  - Draw one or more cards from a deck
+     - GET https://deckofcardsapi.com/api/deck/<>/draw/
+- Takes advantage of Object Oriented principles and code organization. 
 
 ## Getting started
 Prerequisites:
-- Your computer must be running Windows 10, version 1803 or newer.
-- Install the latest version of [Visual Studio](https://developer.microsoft.com/en-us/windows/downloads) (the free community edition is sufficient).
-  - Install the "Universal Windows Platform Development" workload.
-  - Install the optional "C++ Universal Windows Platform tools" component.
-  - Install the latest Windows 10 SDK.
-
-  ![Visual Studio Installation Screenshot](docs/Images/VSInstallationScreenshot.png)
-- Install the [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) Visual Studio extension.
-
+- Your computer should be running the latest Windows 10, version 1809 or newer. It is not required, but the code was developed and tested on that environment.
+- Install the latest version of your favorite IDE -- such as Eclipse or IntelliJ.
+- Install the needed JDK code in able to run the Java code.
 - Get the code:
     ```
-    git clone https://github.com/Microsoft/calculator.git
+    git clone https://github.com/Eric-Wiegman/DeckOfCard.git
     ```
 
-- Open [src\Calculator.sln](/src/Calculator.sln) in Visual Studio to build and run the Calculator app.
-- For a general description of the Calculator project architecture see [ApplicationArchitecture.md](docs/ApplicationArchitecture.md).
-- To run the UI Tests, you need to make sure that
-  [Windows Application Driver (WinAppDriver)](https://github.com/microsoft/WinAppDriver/releases/latest)
-  is installed.
+- Open the CardsTester.java file and run it as a Java Application to play the game that indirectly tests the API.
+- Open the APITests.java file and run it as a TestNG Test to run QA Test Cases to more formally test the API.
 
 ## Instructions
- -
+ - 
 
 
 
