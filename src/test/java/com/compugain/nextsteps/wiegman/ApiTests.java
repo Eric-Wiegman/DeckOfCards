@@ -193,6 +193,7 @@ public class ApiTests
 		}
 		
 		isShuffled = json.getBoolean("shuffled");
+		
 		CardsAPI.setDeckId(json.getString("deck_id"));
     	
     	if (doShuffle) {
