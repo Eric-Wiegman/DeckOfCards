@@ -3,8 +3,7 @@
 <suite name="Testing API Calls"  parallel="classes" thread-count="5" >
     <test name="Exercise">
          <classes>
-             <class name="com.compugain.nextsteps.wiegman.ApiGetTests"/>
-             <class name="com.compugain.nextsteps.wiegman.ApiNegativeGetTests"/>
+             <class name="com.compugain.nextsteps.wiegman.ApiTests"/>
           </classes>
      </test> <!-- Test -->
 </suite> <!-- Suite -->
